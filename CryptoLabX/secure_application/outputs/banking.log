@@ -1,0 +1,10 @@
+2026-08-12 12:13:12,273 - INFO - Balance inquiry: user_id=1, account_id=1, owner_id=1, balance=50000.00
+2026-08-12 12:13:31,770 - INFO - Transfer completed: sender_user=1, receiver_account=2, amount=200.00, remaining_balance=49800.00
+2026-08-12 12:37:06,570 - INFO - Balance inquiry: user_id=1, account_id=1, owner_id=1, balance=49800.00
+2026-08-12 12:38:15,826 - INFO - Balance inquiry: user_id=1, account_id=2, owner_id=2, balance=25000.00
+2026-08-12 12:38:46,485 - INFO - Transfer completed: sender_user=1, receiver_account=1, amount=200.00, remaining_balance=49600.00
+2026-08-12 12:39:41,155 - INFO - Balance inquiry: user_id=1, account_id=1, owner_id=1, balance=49600.00
+2026-08-12 12:40:02,827 - INFO - Transfer completed: sender_user=1, receiver_account=2, amount=200.00, remaining_balance=49400.00
+2026-08-12 12:40:18,195 - INFO - Balance inquiry: user_id=1, account_id=2, owner_id=2, balance=25000.00
+2026-08-12 12:41:05,509 - INFO - Beneficiary added: user_id=1, name=sneha, account_number=3
+2026-08-12 12:41:26,028 - INFO - Beneficiary added: user_id=1, name=alice, account_number=1
