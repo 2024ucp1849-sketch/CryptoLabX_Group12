@@ -1,0 +1,15 @@
+Test Case 1
+Plaintext: this is a secret message
+Key: 3
+
+Test Case 2
+Plaintext: cryptography is interesting
+Key: 7
+
+Test Case 3
+Plaintext: computer science laboratory
+Key: 12
+
+Test Case 4
+Plaintext: the quick brown fox jumps over the lazy dog
+Key: 5

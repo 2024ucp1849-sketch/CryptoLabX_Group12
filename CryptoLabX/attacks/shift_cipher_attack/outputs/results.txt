@@ -1,0 +1,55 @@
+SHIFT CIPHER CRYPTANALYSIS RESULTS:
+
+
+Test Case 1
+
+Plaintext: this is a secret message
+Actual Key: 3
+Ciphertext: wklv lv d vhfuhw phvvdjh
+Dictionary Key: 3
+Chi-Square Key: 3
+Dictionary Correct: Yes
+Chi-Square Correct: Yes
+
+
+Test Case 2
+
+Plaintext: cryptography is interesting
+Actual Key: 7
+Ciphertext: JYFWAVNZHAPOFV PZ PUALYLZAPUN
+Dictionary Key: 
+Chi-Square Key: 
+Dictionary Correct: 
+Chi-Square Correct: 
+
+
+Test Case 3
+
+Plaintext: computer science laboratory
+Actual Key: 12
+Ciphertext: 
+Dictionary Key: 
+Chi-Square Key: 
+Dictionary Correct: 
+Chi-Square Correct: 
+
+
+Test Case 4
+
+Plaintext: the quick brown fox jumps over the lazy dog
+Actual Key: 5
+Ciphertext: 
+Dictionary Key: 
+Chi-Square Key: 
+Dictionary Correct: 
+Chi-Square Correct: 
+
+
+SUMMARY
+Test Case 1: Actual Key = 3
+Test Case 2: Actual Key = 7
+Test Case 3: Actual Key = 12
+Test Case 4: Actual Key = 5
+
+The Dictionary and Chi-Square keys should be filled
+using the actual output produced by the attack programs.
