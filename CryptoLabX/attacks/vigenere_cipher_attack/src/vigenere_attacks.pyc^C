@@ -1,0 +1,467 @@
+
+from collections import Counter
+from math import gcd
+from functools import reduce
+
+
+# ------------------------------------------------------------
+# 1. CLEAN CIPHERTEXT
+# ------------------------------------------------------------
+def clean_ciphertext(ciphertext):
+    """
+    Remove spaces, numbers, and special characters.
+    Convert everything to uppercase.
+    """
+    return ''.join(ch for ch in ciphertext.upper() if ch.isalpha())
+
+
+# ------------------------------------------------------------
+# 2. FIND REPEATED PATTERNS
+# ------------------------------------------------------------
+def find_repeated_patterns(ciphertext, min_length=3, max_length=5):
+    """
+    Find repeated sequences of length 3 to 5.
+    Returns:
+        pattern -> list of positions
+    """
+    patterns = {}
+
+    for length in range(min_length, max_length + 1):
+        for i in range(len(ciphertext) - length + 1):
+            pattern = ciphertext[i:i + length]
+
+            if pattern not in patterns:
+                patterns[pattern] = []
+
+            patterns[pattern].append(i)
+
+    # Keep only patterns that occur more than once
+    repeated = {
+        pattern: positions
+        for pattern, positions in patterns.items()
+        if len(positions) > 1
+    }
+
+    return repeated
+
+
+# ------------------------------------------------------------
+# 3. CALCULATE DISTANCES
+# ------------------------------------------------------------
+def calculate_distances(repeated_patterns):
+    """
+    Calculate distances between repeated occurrences.
+    """
+x    distances = []
+
+    for pattern, positions in repeated_patterns.items():
+        for i in range(len(positions)):
+            for j in range(i + 1, len(positions)):
+                distance = positions[j] - positions[i]
+                distances.append(distance)
+
+    return distances
+
+
+# ------------------------------------------------------------
+# 4. FIND FACTORS
+# ------------------------------------------------------------
+def find_factors(number):
+    """
+    Find factors of a number.
+    """
+    factors = []
+
+    for i in range(2, number + 1):
+        if number % i == 0:
+            factors.append(i)
+
+    return factors
+
+
+# ------------------------------------------------------------
+# 5. KASISKI ANALYSIS
+# ------------------------------------------------------------
+def kasiski_analysis(ciphertext):
+    """
+    Use repeated patterns and their distances
+    to suggest probable key lengths.
+    """
+
+    repeated_patterns = find_repeated_patterns(ciphertext)
+
+    distances = calculate_distances(repeated_patterns)
+
+    factor_count = Counter()
+
+    for distance in distances:
+        factors = find_factors(distance)
+
+        for factor in factors:
+            # Usually Vigenere keys are not extremely long
+            if factor <= 20:
+                factor_count[factor] += 1
+
+    print("\n========== KASISKI ANALYSIS ==========")
+
+    print("\nRepeated Patterns:")
+    for pattern, positions in repeated_patterns.items():
+        print(pattern, "->", positions)
+
+    print("\nDistances:")
+    print(distances)
+
+    print("\nFactor Counts:")
+
+    for factor, count in factor_count.most_common():
+        print("Key Length:", factor, "Occurrences:", count)
+
+    if factor_count:
+        candidates = [
+            factor
+            for factor, count in factor_count.most_common(5)
+        ]
+    else:
+        candidates = []
+
+    print("\nCandidate Key Lengths:", candidates)
+
+    return candidates
+
+
+# ------------------------------------------------------------
+# 6. CALCULATE INDEX OF COINCIDENCE
+# ------------------------------------------------------------
+def calculate_ic(text):
+    """
+    Calculate Index of Coincidence.
+    """
+
+    n = len(text)
+
+    if n <= 1:
+        return 0
+
+    frequencies = Counter(text)
+
+    numerator = sum(
+        count * (count - 1)
+        for count in frequencies.values()
+    )
+
+    denominator = n * (n - 1)
+
+    return numerator / denominator
+
+
+# ------------------------------------------------------------
+# 7. SPLIT INTO GROUPS
+# ------------------------------------------------------------
+def split_into_groups(ciphertext, key_length):
+    """
+    Divide ciphertext into groups based on key length.
+
+    Example:
+    Key length = 3
+
+    Group 1 -> positions 0,3,6,...
+    Group 2 -> positions 1,4,7,...
+    Group 3 -> positions 2,5,8,...
+    """
+
+    groups = []
+
+    for i in range(key_length):
+        group = ciphertext[i::key_length]
+        groups.append(group)
+
+    return groups
+
+
+# ------------------------------------------------------------
+# 8. FREQUENCY ANALYSIS
+# ------------------------------------------------------------
+def frequency_analysis(group):
+    """
+    Calculate A-Z frequency for a group.
+    """
+
+    frequency = Counter(group)
+
+    table = {}
+
+    for letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
+        table[letter] = frequency.get(letter, 0)
+
+    return table
+
+
+# ------------------------------------------------------------
+# 9. FIND SHIFT
+# ------------------------------------------------------------
+def find_shift(group):
+    """
+    Find the probable Caesar shift for a group.
+
+    We try all 26 possible shifts and compare the
+    resulting frequencies with standard English frequencies.
+    """
+
+    english_frequency = {
+        'A': 0.082,
+        'B': 0.015,
+        'C': 0.028,
+        'D': 0.043,
+        'E': 0.127,
+        'F': 0.022,
+        'G': 0.020,
+        'H': 0.061,
+        'I': 0.070,
+        'J': 0.0015,
+        'K': 0.0077,
+        'L': 0.040,
+        'M': 0.024,
+        'N': 0.067,
+        'O': 0.075,
+        'P': 0.019,
+        'Q': 0.00095,
+        'R': 0.060,
+        'S': 0.063,
+        'T': 0.091,
+        'U': 0.028,
+        'V': 0.0098,
+        'W': 0.024,
+        'X': 0.0015,
+        'Y': 0.020,
+        'Z': 0.00074
+    }
+
+    n = len(group)
+
+    best_shift = 0
+    best_score = float('inf')
+
+    for shift in range(26):
+
+        # Frequency after decrypting using this shift
+        decrypted = []
+
+        for char in group:
+            value = (ord(char) - ord('A') - shift) % 26
+            decrypted.append(chr(value + ord('A')))
+
+        frequency = Counter(decrypted)
+
+        # Chi-square score
+        score = 0
+
+        for letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ':
+
+            observed = frequency.get(letter, 0)
+
+            expected = english_frequency[letter] * n
+
+            if expected > 0:
+                score += ((observed - expected) ** 2) / expected
+
+        if score < best_score:
+            best_score = score
+            best_shift = shift
+
+    return best_shift
+
+
+# ------------------------------------------------------------
+# 10. FIND KEY
+# ------------------------------------------------------------
+def find_key(groups):
+    """
+    Find one Caesar shift for each group
+    and combine them to form the Vigenere key.
+    """
+
+    key = ""
+
+    shifts = []
+
+    for group in groups:
+
+        shift = find_shift(group)
+
+        shifts.append(shift)
+
+        key += chr(shift + ord('A'))
+
+    return key, shifts
+
+
+# ------------------------------------------------------------
+# 11. VIGENERE DECRYPT
+# ------------------------------------------------------------
+def vigenere_decrypt(ciphertext, key):
+    """
+    Decrypt ciphertext using the recovered key.
+    """
+
+    plaintext = ""
+
+    key = key.upper()
+
+    for i, char in enumerate(ciphertext):
+
+        cipher_value = ord(char) - ord('A')
+
+        key_value = ord(key[i % len(key)]) - ord('A')
+
+        plain_value = (cipher_value - key_value) % 26
+
+        plaintext += chr(plain_value + ord('A'))
+
+    return plaintext
+
+
+# ------------------------------------------------------------
+# 12. VIGENERE ENCRYPT
+# ------------------------------------------------------------
+def vigenere_encrypt(plaintext, key):
+    """
+    Encrypt plaintext using Vigenere cipher.
+    """
+
+    ciphertext = ""
+
+    key = key.upper()
+
+    for i, char in enumerate(plaintext):
+
+        plain_value = ord(char) - ord('A')
+
+        key_value = ord(key[i % len(key)]) - ord('A')
+
+        cipher_value = (plain_value + key_value) % 26
+
+        ciphertext += chr(cipher_value + ord('A'))
+
+    return ciphertext
+
+
+# ------------------------------------------------------------
+# 13. VERIFY
+# ------------------------------------------------------------
+def verify(original_ciphertext, plaintext, key):
+    """
+    Re-encrypt plaintext and compare it with original ciphertext.
+    """
+
+    recreated_ciphertext = vigenere_encrypt(plaintext, key)
+
+    print("\n========== VERIFICATION ==========")
+
+    print("Original Ciphertext :")
+    print(original_ciphertext)
+
+    print("\nRe-encrypted Ciphertext :")
+    print(recreated_ciphertext)
+
+    if recreated_ciphertext == original_ciphertext:
+        print("\nVerification Successful!")
+        print("Re-encrypted ciphertext matches original ciphertext.")
+        return True
+    else:
+        print("\nVerification Failed!")
+        print("Re-encrypted ciphertext does NOT match.")
+        return False
+
+
+# ------------------------------------------------------------
+# MAIN PROGRAM
+# ------------------------------------------------------------
+def main():
+
+    print("==============================================")
+    print(" VIGENERE CIPHER CRYPTANALYSIS")
+    print(" KASISKI + FREQUENCY ANALYSIS")
+    print("==============================================")
+
+    ciphertext = input("\nEnter ciphertext: ")
+
+    # Step 1
+    ciphertext = clean_ciphertext(ciphertext)
+
+    print("\nCleaned Ciphertext:")
+    print(ciphertext)
+
+    # Step 2
+    candidates = kasiski_analysis(ciphertext)
+
+    if not candidates:
+        print("\nCould not estimate key length using Kasiski.")
+        return    # Select most probable key length
+    key_length = candidates[0]
+
+    print("\n==============================================")
+    print("Estimated Key Length:", key_length)
+    print("==============================================")
+
+    # Step 3
+    groups = split_into_groups(ciphertext, key_length)
+
+    print("\n========== GROUPS ==========")
+
+    for i, group in enumerate(groups):
+        print("Group", i + 1, ":", group)
+
+    # Step 4
+    print("\n========== FREQUENCY TABLES ==========")
+
+    for i, group in enumerate(groups):
+
+        frequency = frequency_analysis(group)
+
+        print("\nGroup", i + 1)
+        print("----------------------")
+
+        for letter, count in frequency.items():
+            print(letter, ":", count)
+
+        print("IC =", calculate_ic(group))
+
+    # Step 5
+    key, shifts = find_key(groups)
+
+    print("\n==============================================")
+    print("RECOVERED KEY")
+    print("==============================================")
+
+    print("Key:", key)
+
+    print("\nShifts:")
+
+    for i, shift in enumerate(shifts):
+        print(
+            "Group",
+            i + 1,
+            "-> Shift",
+            shift,
+            "->",
+            chr(shift + ord('A'))
+        )
+
+    # Step 6
+    plaintext = vigenere_decrypt(ciphertext, key)
+
+    print("\n==============================================")
+    print("RECOVERED PLAINTEXT")
+    print("==============================================")
+
+    print(plaintext)
+
+    # Step 7
+    verify(ciphertext, plaintext, key)
+
+
+# ------------------------------------------------------------
+# PROGRAM START
+# ------------------------------------------------------------
+if __name__ == "__main__":
+    main()

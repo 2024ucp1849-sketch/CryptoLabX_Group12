@@ -1,0 +1,47 @@
+n the previous chapter we saw some fundamental limitations of perfect se-
+crecy. In this chapter we begin our study of modern cryptography by intro-
+ducing the weaker (but sufficient) notion of computational secrecy. We will
+then show how this definition can be used to bypass the impossibility results
+shown previously and, in particular, how a short key (say, 128 bits long) can
+be used to encrypt many long messages (say, gigabytes in total).
+Along the way we will study the fundamental notion of pseudorandomness,
+which captures the idea that something can “look” completely random even
+though it is not. This powerful concept underlies much of modern cryptogra-
+phy, and has applications and implications beyond the field as well.
+3.1 Computational Security
+In Chapter 2 we introduced the notion of perfect secrecy. While perfect
+secrecy is a worthwhile goal, it is also unnecessarily strong. Perfect secrecy
+requires that absolutely no information about an encrypted message is leaked,
+even to an eavesdropper with unlimited computational power. For all practical
+purposes, however, an encryption scheme would still be considered secure if
+it leaked only a tiny amount of information to eavesdroppers with bounded
+computational power. For example, a scheme that leaks information with
+probability at most 2−60 to eavesdroppers investing up to 200 years of com-
+putational effort on the fastest available supercomputer is adequate for any
+real-world application. Security definitions that take into account computa-
+tional limits on the attacker, and allow for a small probability of failure, are
+called computational, to distinguish them from notions (like perfect secrecy)
+that are information-theoretic in nature. Computational security is now the
+de facto way in which security is defined for all cryptographic purposes.
+We stress that although we give up on obtaining perfect security, this does
+not mean we do away with the rigorous mathematical approach. Definitions
+and proofs are still essential, and the only difference is that we now consider
+weaker (but still meaningful) definitions of security.
+Computational security incorporates two relaxations relative to information-
+43
+44 Introduction to Modern Cryptography
+theoretic notions of security (in the case of encryption, both these relaxations
+are necessary in order to go beyond the limitations of perfect secrecy discussed
+in the previous chapter):
+1. Security is only guaranteed against efficient adversaries that run for some
+feasible amount of time. This means that given enough time (or suffi-
+cient computational resources) an attacker may be able to violate secu-
+rity. If we can make the resources required to break the scheme larger
+than those available to any realistic attacker, then for all practical pur-
+poses the scheme is unbreakable.
+2. Adversaries can potentially succeed (i.e., security can potentially fail)
+with some very small probability. If we can make this probability suffi-
+ciently small, we need not worry about it.
+To obtain a meaningful theory, we need to precisely define the above relax-
+ations. There are two general approaches for doing so: the concrete approach
+and the asymptotic approach. These are described next.

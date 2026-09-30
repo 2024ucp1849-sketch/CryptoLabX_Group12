@@ -3,6 +3,10 @@
       MONOALPHABETIC SUBSTITUTION CIPHER
 ============================================
 
+Random Encryption Key:
+Plain  : ABCDEFGHIJKLMNOPQRSTUVWXYZ
+Cipher : BVYTLWZJHSKNOFGMAPRDXUQCEI
+
 Original Plaintext:
 n the previous chapter we saw some fundamental limitations of perfect se-
 crecy. In this chapter we begin our study of modern cryptography by intro-
@@ -54,620 +58,620 @@ and the asymptotic approach. These are described next.
 
 
 Ciphertext:
-f zit hktcogxl eiqhztk vt lqv lgdt yxfrqdtfzqs sodozqzogfl gy htkytez lt-
-ekten. Of ziol eiqhztk vt wtuof gxk lzxrn gy dgrtkf eknhzgukqhin wn ofzkg-
-rxeofu zit vtqatk (wxz lxyyoeotfz) fgzogf gy egdhxzqzogfqs ltekten. Vt voss
-zitf ligv igv ziol rtyofozogf eqf wt xltr zg wnhqll zit odhgllowosozn ktlxszl
-ligvf hktcogxlsn qfr, of hqkzoexsqk, igv q ligkz atn (lqn, 128 wozl sgfu) eqf
-wt xltr zg tfeknhz dqfn sgfu dtllqutl (lqn, uouqwnztl of zgzqs).
-Qsgfu zit vqn vt voss lzxrn zit yxfrqdtfzqs fgzogf gy hltxrgkqfrgdftll,
-vioei eqhzxktl zit ortq ziqz lgdtziofu eqf “sgga” egdhstztsn kqfrgd tctf
-zigxui oz ol fgz. Ziol hgvtkyxs egfethz xfrtksotl dxei gy dgrtkf eknhzgukq-
-hin, qfr iql qhhsoeqzogfl qfr odhsoeqzogfl wtngfr zit yotsr ql vtss.
-3.1 Egdhxzqzogfqs Ltexkozn
-Of Eiqhztk 2 vt ofzkgrxetr zit fgzogf gy htkytez ltekten. Viost htkytez
-ltekten ol q vgkziviost ugqs, oz ol qslg xfftetllqkosn lzkgfu. Htkytez ltekten
-ktjxoktl ziqz qwlgsxztsn fg ofygkdqzogf qwgxz qf tfeknhztr dtllqut ol stqatr,
-tctf zg qf tqctlrkghhtk vozi xfsodoztr egdhxzqzogfqs hgvtk. Ygk qss hkqezoeqs
-hxkhgltl, igvtctk, qf tfeknhzogf leitdt vgxsr lzoss wt egflortktr ltexkt oy
-oz stqatr gfsn q zofn qdgxfz gy ofygkdqzogf zg tqctlrkghhtkl vozi wgxfrtr
-egdhxzqzogfqs hgvtk. Ygk tbqdhst, q leitdt ziqz stqal ofygkdqzogf vozi
-hkgwqwosozn qz dglz 2−60 zg tqctlrkghhtkl ofctlzofu xh zg 200 ntqkl gy egd-
-hxzqzogfqs tyygkz gf zit yqlztlz qcqosqwst lxhtkegdhxztk ol qrtjxqzt ygk qfn
-ktqs-vgksr qhhsoeqzogf. Ltexkozn rtyofozogfl ziqz zqat ofzg qeegxfz egdhxzq-
-zogfqs sodozl gf zit qzzqeatk, qfr qssgv ygk q ldqss hkgwqwosozn gy yqosxkt, qkt
-eqsstr egdhxzqzogfqs, zg rolzofuxoli zitd ykgd fgzogfl (soat htkytez ltekten)
-ziqz qkt ofygkdqzogf-zitgktzoe of fqzxkt. Egdhxzqzogfqs ltexkozn ol fgv zit
-rt yqezg vqn of vioei ltexkozn ol rtyoftr ygk qss eknhzgukqhioe hxkhgltl.
-Vt lzktll ziqz qszigxui vt uoct xh gf gwzqofofu htkytez ltexkozn, ziol rgtl
-fgz dtqf vt rg qvqn vozi zit kougkgxl dqzitdqzoeqs qhhkgqei. Rtyofozogfl
-qfr hkggyl qkt lzoss tlltfzoqs, qfr zit gfsn royytktfet ol ziqz vt fgv egflortk
-vtqatk (wxz lzoss dtqfofuyxs) rtyofozogfl gy ltexkozn.
-Egdhxzqzogfqs ltexkozn ofegkhgkqztl zvg ktsqbqzogfl ktsqzoct zg ofygkdqzogf-
+f djl mpluhgxr yjbmdlp ql rbq rgol wxftbolfdbn nhohdbdhgfr gw mlpwlyd rl-
+yplye. Hf djhr yjbmdlp ql vlzhf gxp rdxte gw ogtlpf ypemdgzpbmje ve hfdpg-
+txyhfz djl qlbklp (vxd rxwwhyhlfd) fgdhgf gw ygomxdbdhgfbn rlyplye. Ql qhnn
+djlf rjgq jgq djhr tlwhfhdhgf ybf vl xrlt dg vembrr djl homgrrhvhnhde plrxndr
+rjgqf mpluhgxrne bft, hf mbpdhyxnbp, jgq b rjgpd kle (rbe, 128 vhdr ngfz) ybf
+vl xrlt dg lfypemd obfe ngfz olrrbzlr (rbe, zhzbvedlr hf dgdbn).
+Bngfz djl qbe ql qhnn rdxte djl wxftbolfdbn fgdhgf gw mrlxtgpbftgoflrr,
+qjhyj ybmdxplr djl htlb djbd rgoldjhfz ybf “nggk” ygomnldlne pbftgo lulf
+djgxzj hd hr fgd. Djhr mgqlpwxn ygfylmd xftlpnhlr oxyj gw ogtlpf ypemdgzpb-
+mje, bft jbr bmmnhybdhgfr bft homnhybdhgfr vlegft djl whlnt br qlnn.
+3.1 Ygomxdbdhgfbn Rlyxphde
+Hf Yjbmdlp 2 ql hfdpgtxylt djl fgdhgf gw mlpwlyd rlyplye. Qjhnl mlpwlyd
+rlyplye hr b qgpdjqjhnl zgbn, hd hr bnrg xfflylrrbphne rdpgfz. Mlpwlyd rlyplye
+plaxhplr djbd bvrgnxdlne fg hfwgpobdhgf bvgxd bf lfypemdlt olrrbzl hr nlbklt,
+lulf dg bf lbulrtpgmmlp qhdj xfnhohdlt ygomxdbdhgfbn mgqlp. Wgp bnn mpbydhybn
+mxpmgrlr, jgqlulp, bf lfypemdhgf ryjlol qgxnt rdhnn vl ygfrhtlplt rlyxpl hw
+hd nlbklt gfne b dhfe bogxfd gw hfwgpobdhgf dg lbulrtpgmmlpr qhdj vgxftlt
+ygomxdbdhgfbn mgqlp. Wgp lcbomnl, b ryjlol djbd nlbkr hfwgpobdhgf qhdj
+mpgvbvhnhde bd ogrd 2−60 dg lbulrtpgmmlpr hfulrdhfz xm dg 200 elbpr gw ygo-
+mxdbdhgfbn lwwgpd gf djl wbrdlrd bubhnbvnl rxmlpygomxdlp hr btlaxbdl wgp bfe
+plbn-qgpnt bmmnhybdhgf. Rlyxphde tlwhfhdhgfr djbd dbkl hfdg byygxfd ygomxdb-
+dhgfbn nhohdr gf djl bddbyklp, bft bnngq wgp b robnn mpgvbvhnhde gw wbhnxpl, bpl
+ybnnlt ygomxdbdhgfbn, dg thrdhfzxhrj djlo wpgo fgdhgfr (nhkl mlpwlyd rlyplye)
+djbd bpl hfwgpobdhgf-djlgpldhy hf fbdxpl. Ygomxdbdhgfbn rlyxphde hr fgq djl
+tl wbydg qbe hf qjhyj rlyxphde hr tlwhflt wgp bnn ypemdgzpbmjhy mxpmgrlr.
+Ql rdplrr djbd bndjgxzj ql zhul xm gf gvdbhfhfz mlpwlyd rlyxphde, djhr tglr
+fgd olbf ql tg bqbe qhdj djl phzgpgxr obdjlobdhybn bmmpgbyj. Tlwhfhdhgfr
+bft mpggwr bpl rdhnn lrrlfdhbn, bft djl gfne thwwlplfyl hr djbd ql fgq ygfrhtlp
+qlbklp (vxd rdhnn olbfhfzwxn) tlwhfhdhgfr gw rlyxphde.
+Ygomxdbdhgfbn rlyxphde hfygpmgpbdlr dqg plnbcbdhgfr plnbdhul dg hfwgpobdhgf-
 43
-44 Ofzkgrxezogf zg Dgrtkf Eknhzgukqhin
-zitgktzoe fgzogfl gy ltexkozn (of zit eqlt gy tfeknhzogf, wgzi zitlt ktsqbqzogfl
-qkt ftetllqkn of gkrtk zg ug wtngfr zit sodozqzogfl gy htkytez ltekten rolexlltr
-of zit hktcogxl eiqhztk):
-1. Ltexkozn ol gfsn uxqkqfzttr quqoflz tyyoeotfz qrctklqkotl ziqz kxf ygk lgdt
-ytqlowst qdgxfz gy zodt. Ziol dtqfl ziqz uoctf tfgxui zodt (gk lxyyo-
-eotfz egdhxzqzogfqs ktlgxketl) qf qzzqeatk dqn wt qwst zg cogsqzt ltex-
-kozn. Oy vt eqf dqat zit ktlgxketl ktjxoktr zg wktqa zit leitdt sqkutk
-ziqf ziglt qcqosqwst zg qfn ktqsolzoe qzzqeatk, zitf ygk qss hkqezoeqs hxk-
-hgltl zit leitdt ol xfwktqaqwst.
-2. Qrctklqkotl eqf hgztfzoqssn lxeettr (o.t., ltexkozn eqf hgztfzoqssn yqos)
-vozi lgdt ctkn ldqss hkgwqwosozn. Oy vt eqf dqat ziol hkgwqwosozn lxyyo-
-eotfzsn ldqss, vt fttr fgz vgkkn qwgxz oz.
-Zg gwzqof q dtqfofuyxs zitgkn, vt fttr zg hkteoltsn rtyoft zit qwgct ktsqb-
-qzogfl. Zitkt qkt zvg utftkqs qhhkgqeitl ygk rgofu lg: zit egfektzt qhhkgqei
-qfr zit qlndhzgzoe qhhkgqei. Zitlt qkt rtlekowtr ftbz.
+44 Hfdpgtxydhgf dg Ogtlpf Ypemdgzpbmje
+djlgpldhy fgdhgfr gw rlyxphde (hf djl ybrl gw lfypemdhgf, vgdj djlrl plnbcbdhgfr
+bpl flylrrbpe hf gptlp dg zg vlegft djl nhohdbdhgfr gw mlpwlyd rlyplye thryxrrlt
+hf djl mpluhgxr yjbmdlp):
+1. Rlyxphde hr gfne zxbpbfdllt bzbhfrd lwwhyhlfd btulprbphlr djbd pxf wgp rgol
+wlbrhvnl bogxfd gw dhol. Djhr olbfr djbd zhulf lfgxzj dhol (gp rxwwh-
+yhlfd ygomxdbdhgfbn plrgxpylr) bf bddbyklp obe vl bvnl dg uhgnbdl rlyx-
+phde. Hw ql ybf obkl djl plrgxpylr plaxhplt dg vplbk djl ryjlol nbpzlp
+djbf djgrl bubhnbvnl dg bfe plbnhrdhy bddbyklp, djlf wgp bnn mpbydhybn mxp-
+mgrlr djl ryjlol hr xfvplbkbvnl.
+2. Btulprbphlr ybf mgdlfdhbnne rxyyllt (h.l., rlyxphde ybf mgdlfdhbnne wbhn)
+qhdj rgol ulpe robnn mpgvbvhnhde. Hw ql ybf obkl djhr mpgvbvhnhde rxwwh-
+yhlfdne robnn, ql fllt fgd qgppe bvgxd hd.
+Dg gvdbhf b olbfhfzwxn djlgpe, ql fllt dg mplyhrlne tlwhfl djl bvgul plnbc-
+bdhgfr. Djlpl bpl dqg zlflpbn bmmpgbyjlr wgp tghfz rg: djl ygfypldl bmmpgbyj
+bft djl breomdgdhy bmmpgbyj. Djlrl bpl tlryphvlt flcd.
 
 
 ============================================
           FREQUENCY ANALYSIS
 ============================================
 Letter	Count	Percentage
-T	303	11.5341%
-Z	252	9.59269%
-Q	218	8.29844%
+L	303	11.5341%
+D	252	9.59269%
+B	218	8.29844%
 G	215	8.18424%
-O	206	7.84164%
+H	206	7.84164%
 F	174	6.62352%
-K	166	6.319%
-L	162	6.16673%
-E	122	4.64408%
-S	113	4.30148%
-I	93	3.54016%
-H	88	3.34983%
+P	166	6.319%
+R	162	6.16673%
+Y	122	4.64408%
+N	113	4.30148%
+J	93	3.54016%
+M	88	3.34983%
 X	83	3.1595%
-N	69	2.62657%
-R	69	2.62657%
-Y	68	2.5885%
-D	63	2.39817%
-V	48	1.82718%
-W	38	1.44652%
-U	33	1.25619%
-C	20	0.761325%
-A	16	0.60906%
-B	5	0.190331%
-J	3	0.114199%
+E	69	2.62657%
+T	69	2.62657%
+W	68	2.5885%
+O	63	2.39817%
+Q	48	1.82718%
+V	38	1.44652%
+Z	33	1.25619%
+U	20	0.761325%
+K	16	0.60906%
+C	5	0.190331%
+A	3	0.114199%
 
 Most frequent ciphertext letters:
-T (303)  Z (252)  Q (218)  G (215)  O (206)  
+L (303)  D (252)  B (218)  G (215)  H (206)  
 
 ============================================
         WORD FREQUENCY ANALYSIS
 ============================================
 
 One-letter words:
-q -> 6 times
+b -> 6 times
 f -> 1 times
-o -> 1 times
-t -> 1 times
+h -> 1 times
+l -> 1 times
 
 Two-letter words:
-zg -> 15 times
-gy -> 14 times
-vt -> 13 times
-ol -> 10 times
-of -> 9 times
-wt -> 4 times
-oz -> 4 times
-qf -> 4 times
-oy -> 3 times
+dg -> 15 times
+gw -> 14 times
+ql -> 13 times
+hr -> 10 times
+hf -> 9 times
+vl -> 4 times
+hd -> 4 times
+bf -> 4 times
+hw -> 3 times
 gf -> 3 times
-xh -> 2 times
-lt -> 1 times
-wn -> 1 times
-ql -> 1 times
+xm -> 2 times
+rl -> 1 times
+ve -> 1 times
+br -> 1 times
 fg -> 1 times
-qz -> 1 times
-rt -> 1 times
+bd -> 1 times
+tl -> 1 times
+tg -> 1 times
+zg -> 1 times
+gp -> 1 times
 rg -> 1 times
-ug -> 1 times
-gk -> 1 times
-lg -> 1 times
 
 Three-letter words:
-zit -> 22 times
-ygk -> 8 times
-eqf -> 7 times
-qfr -> 7 times
-qkt -> 6 times
-fgz -> 3 times
-qss -> 3 times
-wxz -> 2 times
-igv -> 2 times
-lqn -> 2 times
-vqn -> 2 times
-qfn -> 2 times
-fgv -> 2 times
-zvg -> 2 times
-lqv -> 1 times
-gxk -> 1 times
-atn -> 1 times
-hin -> 1 times
-iql -> 1 times
-egd -> 1 times
-kxf -> 1 times
-dqn -> 1 times
-hxk -> 1 times
+djl -> 22 times
+wgp -> 8 times
+ybf -> 7 times
+bft -> 7 times
+bpl -> 6 times
+fgd -> 3 times
+bnn -> 3 times
+vxd -> 2 times
+jgq -> 2 times
+rbe -> 2 times
+qbe -> 2 times
+bfe -> 2 times
+fgq -> 2 times
+dqg -> 2 times
+rbq -> 1 times
+gxp -> 1 times
+kle -> 1 times
+mje -> 1 times
+jbr -> 1 times
+ygo -> 1 times
+pxf -> 1 times
+obe -> 1 times
+mxp -> 1 times
 
 Repeated words:
-zit -> 22 times
-zg -> 15 times
-gy -> 14 times
-vt -> 13 times
-ol -> 10 times
-ltexkozn -> 10 times
-of -> 9 times
-ziqz -> 9 times
-egdhxzqzogfqs -> 8 times
-ygk -> 8 times
-htkytez -> 7 times
-eqf -> 7 times
-qfr -> 7 times
-ziol -> 6 times
-ltekten -> 6 times
-q -> 6 times
-qkt -> 6 times
-ofygkdqzogf -> 5 times
-vozi -> 5 times
-eiqhztk -> 4 times
-wt -> 4 times
-oz -> 4 times
-qf -> 4 times
-leitdt -> 4 times
-hkgwqwosozn -> 4 times
-lgdt -> 3 times
-dgrtkf -> 3 times
-fgzogf -> 3 times
-fgz -> 3 times
-qss -> 3 times
-lzoss -> 3 times
-oy -> 3 times
-gfsn -> 3 times
+djl -> 22 times
+dg -> 15 times
+gw -> 14 times
+ql -> 13 times
+hr -> 10 times
+rlyxphde -> 10 times
+hf -> 9 times
+djbd -> 9 times
+ygomxdbdhgfbn -> 8 times
+wgp -> 8 times
+mlpwlyd -> 7 times
+ybf -> 7 times
+bft -> 7 times
+djhr -> 6 times
+rlyplye -> 6 times
+b -> 6 times
+bpl -> 6 times
+hfwgpobdhgf -> 5 times
+qhdj -> 5 times
+yjbmdlp -> 4 times
+vl -> 4 times
+hd -> 4 times
+bf -> 4 times
+ryjlol -> 4 times
+mpgvbvhnhde -> 4 times
+rgol -> 3 times
+ogtlpf -> 3 times
+fgdhgf -> 3 times
+fgd -> 3 times
+bnn -> 3 times
+rdhnn -> 3 times
+hw -> 3 times
+gfne -> 3 times
 gf -> 3 times
-rtyofozogfl -> 3 times
-qzzqeatk -> 3 times
-ldqss -> 3 times
-qhhkgqei -> 3 times
-hktcogxl -> 2 times
-yxfrqdtfzqs -> 2 times
-sodozqzogfl -> 2 times
-lzxrn -> 2 times
-eknhzgukqhin -> 2 times
-vtqatk -> 2 times
-wxz -> 2 times
-voss -> 2 times
-zitf -> 2 times
-igv -> 2 times
-xltr -> 2 times
-lqn -> 2 times
-sgfu -> 2 times
-vqn -> 2 times
-vioei -> 2 times
-tctf -> 2 times
-wtngfr -> 2 times
-qwgxz -> 2 times
-stqatr -> 2 times
-hgvtk -> 2 times
-hkqezoeqs -> 2 times
-hxkhgltl -> 2 times
-tfeknhzogf -> 2 times
-qdgxfz -> 2 times
-tqctlrkghhtkl -> 2 times
-xh -> 2 times
-qcqosqwst -> 2 times
-qfn -> 2 times
-fgzogfl -> 2 times
-zitgktzoe -> 2 times
-fgv -> 2 times
-dtqfofuyxs -> 2 times
-zvg -> 2 times
-ktsqbqzogfl -> 2 times
-zitlt -> 2 times
-qrctklqkotl -> 2 times
-zodt -> 2 times
-lxyyo -> 2 times
-ktlgxketl -> 2 times
-dqat -> 2 times
-hgztfzoqssn -> 2 times
-fttr -> 2 times
+tlwhfhdhgfr -> 3 times
+bddbyklp -> 3 times
+robnn -> 3 times
+bmmpgbyj -> 3 times
+mpluhgxr -> 2 times
+wxftbolfdbn -> 2 times
+nhohdbdhgfr -> 2 times
+rdxte -> 2 times
+ypemdgzpbmje -> 2 times
+qlbklp -> 2 times
+vxd -> 2 times
+qhnn -> 2 times
+djlf -> 2 times
+jgq -> 2 times
+xrlt -> 2 times
+rbe -> 2 times
+ngfz -> 2 times
+qbe -> 2 times
+qjhyj -> 2 times
+lulf -> 2 times
+vlegft -> 2 times
+bvgxd -> 2 times
+nlbklt -> 2 times
+mgqlp -> 2 times
+mpbydhybn -> 2 times
+mxpmgrlr -> 2 times
+lfypemdhgf -> 2 times
+bogxfd -> 2 times
+lbulrtpgmmlpr -> 2 times
+xm -> 2 times
+bubhnbvnl -> 2 times
+bfe -> 2 times
+fgdhgfr -> 2 times
+djlgpldhy -> 2 times
+fgq -> 2 times
+olbfhfzwxn -> 2 times
+dqg -> 2 times
+plnbcbdhgfr -> 2 times
+djlrl -> 2 times
+btulprbphlr -> 2 times
+dhol -> 2 times
+rxwwh -> 2 times
+plrgxpylr -> 2 times
+obkl -> 2 times
+mgdlfdhbnne -> 2 times
+fllt -> 2 times
 
 ============================================
             PATTERN ANALYSIS
 ============================================
-zit -> 012
-hktcogxl -> 01234567
-eiqhztk -> 0123456
-lqv -> 012
-lgdt -> 0123
-yxfrqdtfzqs -> 01234562748
-sodozqzogfl -> 01213431567
-htkytez -> 0123145
-ekten -> 01203
-ziol -> 0123
-eiqhztk -> 0123456
-wtuof -> 01234
-gxk -> 012
-lzxrn -> 01234
-dgrtkf -> 012345
-eknhzgukqhin -> 012345617382
-ofzkg -> 01234
-rxeofu -> 012345
-zit -> 012
-vtqatk -> 012314
-wxz -> 012
-lxyyoeotfz -> 0122343567
-fgzogf -> 012310
-egdhxzqzogfqs -> 0123456571869
-ltekten -> 0123124
-voss -> 0122
-zitf -> 0123
-ligv -> 0123
-igv -> 012
-ziol -> 0123
-rtyofozogf -> 0123435364
-eqf -> 012
-xltr -> 0123
-wnhqll -> 012344
-zit -> 012
-odhgllowosozn -> 0123440506078
-ktlxszl -> 0123452
-ligvf -> 01234
-hktcogxlsn -> 0123456789
-qfr -> 012
-hqkzoexsqk -> 0123456712
-igv -> 012
-ligkz -> 01234
-atn -> 012
-lqn -> 012
-wozl -> 0123
-sgfu -> 0123
-eqf -> 012
-xltr -> 0123
-tfeknhz -> 0123456
-dqfn -> 0123
-sgfu -> 0123
-dtllqutl -> 01223412
-lqn -> 012
-uouqwnztl -> 010234567
-zgzqs -> 01023
-qsgfu -> 01234
-zit -> 012
-vqn -> 012
-voss -> 0122
-lzxrn -> 01234
-zit -> 012
-yxfrqdtfzqs -> 01234562748
-fgzogf -> 012310
-hltxrgkqfrgdftll -> 0123456784598211
-vioei -> 01231
-eqhzxktl -> 01234567
-zit -> 012
-ortq -> 0123
-ziqz -> 0120
-lgdtziofu -> 012345678
-eqf -> 012
-sgga -> 0112
-egdhstztsn -> 0123456547
-kqfrgd -> 012345
-tctf -> 0102
-zigxui -> 012341
-fgz -> 012
-ziol -> 0123
-hgvtkyxs -> 01234567
-egfethz -> 0120345
-xfrtksotl -> 012345637
-dxei -> 0123
-dgrtkf -> 012345
-eknhzgukq -> 012345617
-hin -> 012
-qfr -> 012
-iql -> 012
-qhhsoeqzogfl -> 011234053678
-qfr -> 012
-odhsoeqzogfl -> 012304560789
-wtngfr -> 012345
-zit -> 012
-yotsr -> 01234
-vtss -> 0122
-egdhxzqzogfqs -> 0123456571869
-ltexkozn -> 01234567
-eiqhztk -> 0123456
-ofzkgrxetr -> 0123456785
-zit -> 012
-fgzogf -> 012310
-htkytez -> 0123145
-ltekten -> 0123124
-viost -> 01234
-htkytez -> 0123145
-ltekten -> 0123124
-vgkziviost -> 0123404567
-ugqs -> 0123
-qslg -> 0123
-xfftetllqkosn -> 0112324456789
-lzkgfu -> 012345
-htkytez -> 0123145
-ltekten -> 0123124
-ktjxoktl -> 01234015
-ziqz -> 0120
-qwlgsxztsn -> 0123456748
-ofygkdqzogf -> 01234567031
-qwgxz -> 01234
-tfeknhztr -> 012345607
-dtllqut -> 0122341
-stqatr -> 012314
-tctf -> 0102
-tqctlrkghhtk -> 012034567705
-vozi -> 0123
-xfsodoztr -> 012343567
-egdhxzqzogfqs -> 0123456571869
-hgvtk -> 01234
-ygk -> 012
-qss -> 011
-hkqezoeqs -> 012345326
-hxkhgltl -> 01203454
-igvtctk -> 0123435
-tfeknhzogf -> 0123456781
-leitdt -> 012343
-vgxsr -> 01234
-lzoss -> 01233
-egflortktr -> 0123456765
-ltexkt -> 012341
-stqatr -> 012314
-gfsn -> 0123
-zofn -> 0123
-qdgxfz -> 012345
-ofygkdqzogf -> 01234567031
-tqctlrkghhtkl -> 0120345677053
-vozi -> 0123
-wgxfrtr -> 0123454
-egdhxzqzogfqs -> 0123456571869
-hgvtk -> 01234
-ygk -> 012
-tbqdhst -> 0123450
-leitdt -> 012343
-ziqz -> 0120
-stqal -> 01234
-ofygkdqzogf -> 01234567031
-vozi -> 0123
-hkgwqwosozn -> 01234356578
-dglz -> 0123
-tqctlrkghhtkl -> 0120345677053
-ofctlzofu -> 012345016
-ntqkl -> 01234
-egd -> 012
-hxzqzogfqs -> 0123245637
-tyygkz -> 011234
-zit -> 012
-yqlztlz -> 0123423
-qcqosqwst -> 010230435
-lxhtkegdhxztk -> 0123456721834
-qrtjxqzt -> 01234052
-ygk -> 012
-qfn -> 012
-ktqs -> 0123
-vgksr -> 01234
-qhhsoeqzogf -> 01123405367
-ltexkozn -> 01234567
-rtyofozogfl -> 01234353647
-ziqz -> 0120
-zqat -> 0123
-ofzg -> 0123
-qeegxfz -> 0112345
-egdhxzq -> 0123456
-zogfqs -> 012345
-sodozl -> 012134
-zit -> 012
-qzzqeatk -> 01102345
-qfr -> 012
-qssgv -> 01123
-ygk -> 012
-ldqss -> 01233
-hkgwqwosozn -> 01234356578
-yqosxkt -> 0123456
-qkt -> 012
-eqsstr -> 012234
-egdhxzqzogfqs -> 0123456571869
-rolzofuxoli -> 01231456127
-zitd -> 0123
-ykgd -> 0123
-fgzogfl -> 0123104
-soat -> 0123
-htkytez -> 0123145
-ltekten -> 0123124
-ziqz -> 0120
-qkt -> 012
-ofygkdqzogf -> 01234567031
-zitgktzoe -> 012342056
-fqzxkt -> 012345
-egdhxzqzogfqs -> 0123456571869
-ltexkozn -> 01234567
-fgv -> 012
-zit -> 012
-yqezg -> 01234
-vqn -> 012
-vioei -> 01231
-ltexkozn -> 01234567
-rtyoftr -> 0123410
-ygk -> 012
-qss -> 011
-eknhzgukqhioe -> 0123456173890
-hxkhgltl -> 01203454
-lzktll -> 012300
-ziqz -> 0120
-qszigxui -> 01234563
-uoct -> 0123
-gwzqofofu -> 012345456
-htkytez -> 0123145
-ltexkozn -> 01234567
-ziol -> 0123
-rgtl -> 0123
-fgz -> 012
-dtqf -> 0123
-qvqn -> 0102
-vozi -> 0123
-zit -> 012
-kougkgxl -> 01230345
-dqzitdqzoeqs -> 012340125617
-qhhkgqei -> 01123045
-rtyofozogfl -> 01234353647
-qfr -> 012
-hkggyl -> 012234
-qkt -> 012
-lzoss -> 01233
-tlltfzoqs -> 011023456
-qfr -> 012
-zit -> 012
-gfsn -> 0123
-royytktfet -> 0122343563
-ziqz -> 0120
-fgv -> 012
-egflortk -> 01234567
-vtqatk -> 012314
-wxz -> 012
-lzoss -> 01233
-dtqfofuyxs -> 0123435678
-rtyofozogfl -> 01234353647
-ltexkozn -> 01234567
-egdhxzqzogfqs -> 0123456571869
-ltexkozn -> 01234567
-ofegkhgkqztl -> 012345346789
-zvg -> 012
-ktsqbqzogfl -> 01234356789
-ktsqzoct -> 01234561
-ofygkdqzogf -> 01234567031
-ofzkgrxezogf -> 012345672041
-dgrtkf -> 012345
-eknhzgukqhin -> 012345617382
-zitgktzoe -> 012342056
-fgzogfl -> 0123104
-ltexkozn -> 01234567
-zit -> 012
-eqlt -> 0123
-tfeknhzogf -> 0123456781
-wgzi -> 0123
-zitlt -> 01232
-ktsqbqzogfl -> 01234356789
-qkt -> 012
-ftetllqkn -> 012133456
-gkrtk -> 01231
-wtngfr -> 012345
-zit -> 012
-sodozqzogfl -> 01213431567
-htkytez -> 0123145
-ltekten -> 0123124
-rolexlltr -> 012342250
-zit -> 012
-hktcogxl -> 01234567
-eiqhztk -> 0123456
-ltexkozn -> 01234567
-gfsn -> 0123
-uxqkqfzttr -> 0123245667
-quqoflz -> 0102345
-tyyoeotfz -> 011232045
-qrctklqkotl -> 01234504635
-ziqz -> 0120
-kxf -> 012
-ygk -> 012
-lgdt -> 0123
-ytqlowst -> 01234561
-qdgxfz -> 012345
-zodt -> 0123
-ziol -> 0123
-dtqfl -> 01234
-ziqz -> 0120
-uoctf -> 01234
-tfgxui -> 012345
-zodt -> 0123
-lxyyo -> 01223
-eotfz -> 01234
-egdhxzqzogfqs -> 0123456571869
-ktlgxketl -> 012340512
-qzzqeatk -> 01102345
-dqn -> 012
-qwst -> 0123
-cogsqzt -> 0123456
-ltex -> 0123
-kozn -> 0123
-eqf -> 012
-dqat -> 0123
-zit -> 012
-ktlgxketl -> 012340512
-ktjxoktr -> 01234015
-wktqa -> 01234
-zit -> 012
-leitdt -> 012343
-sqkutk -> 012342
-ziqf -> 0123
-ziglt -> 01234
-qcqosqwst -> 010230435
-qfn -> 012
-ktqsolzoe -> 012345647
-qzzqeatk -> 01102345
-zitf -> 0123
-ygk -> 012
-qss -> 011
-hkqezoeqs -> 012345326
-hxk -> 012
-hgltl -> 01232
-zit -> 012
-leitdt -> 012343
-xfwktqaqwst -> 01234565274
-qrctklqkotl -> 01234504635
-eqf -> 012
-hgztfzoqssn -> 01234256778
-lxeettr -> 0122334
-ltexkozn -> 01234567
-eqf -> 012
-hgztfzoqssn -> 01234256778
-yqos -> 0123
-vozi -> 0123
-lgdt -> 0123
-ctkn -> 0123
-ldqss -> 01233
-hkgwqwosozn -> 01234356578
-eqf -> 012
-dqat -> 0123
-ziol -> 0123
-hkgwqwosozn -> 01234356578
-lxyyo -> 01223
-eotfzsn -> 0123456
-ldqss -> 01233
-fttr -> 0112
-fgz -> 012
-vgkkn -> 01223
-qwgxz -> 01234
-gwzqof -> 012345
-dtqfofuyxs -> 0123435678
-zitgkn -> 012345
-fttr -> 0112
-hkteoltsn -> 012345267
-rtyoft -> 012341
-zit -> 012
-qwgct -> 01234
-ktsqb -> 01234
-qzogfl -> 012345
-zitkt -> 01232
-qkt -> 012
-zvg -> 012
-utftkqs -> 0121345
-qhhkgqeitl -> 0112304567
-ygk -> 012
-rgofu -> 01234
-zit -> 012
-egfektzt -> 01203454
-qhhkgqei -> 01123045
-qfr -> 012
-zit -> 012
-qlndhzgzoe -> 0123456578
-qhhkgqei -> 01123045
-zitlt -> 01232
-qkt -> 012
-rtlekowtr -> 012345610
-ftbz -> 0123
+djl -> 012
+mpluhgxr -> 01234567
+yjbmdlp -> 0123456
+rbq -> 012
+rgol -> 0123
+wxftbolfdbn -> 01234562748
+nhohdbdhgfr -> 01213431567
+mlpwlyd -> 0123145
+yplye -> 01203
+djhr -> 0123
+yjbmdlp -> 0123456
+vlzhf -> 01234
+gxp -> 012
+rdxte -> 01234
+ogtlpf -> 012345
+ypemdgzpbmje -> 012345617382
+hfdpg -> 01234
+txyhfz -> 012345
+djl -> 012
+qlbklp -> 012314
+vxd -> 012
+rxwwhyhlfd -> 0122343567
+fgdhgf -> 012310
+ygomxdbdhgfbn -> 0123456571869
+rlyplye -> 0123124
+qhnn -> 0122
+djlf -> 0123
+rjgq -> 0123
+jgq -> 012
+djhr -> 0123
+tlwhfhdhgf -> 0123435364
+ybf -> 012
+xrlt -> 0123
+vembrr -> 012344
+djl -> 012
+homgrrhvhnhde -> 0123440506078
+plrxndr -> 0123452
+rjgqf -> 01234
+mpluhgxrne -> 0123456789
+bft -> 012
+mbpdhyxnbp -> 0123456712
+jgq -> 012
+rjgpd -> 01234
+kle -> 012
+rbe -> 012
+vhdr -> 0123
+ngfz -> 0123
+ybf -> 012
+xrlt -> 0123
+lfypemd -> 0123456
+obfe -> 0123
+ngfz -> 0123
+olrrbzlr -> 01223412
+rbe -> 012
+zhzbvedlr -> 010234567
+dgdbn -> 01023
+bngfz -> 01234
+djl -> 012
+qbe -> 012
+qhnn -> 0122
+rdxte -> 01234
+djl -> 012
+wxftbolfdbn -> 01234562748
+fgdhgf -> 012310
+mrlxtgpbftgoflrr -> 0123456784598211
+qjhyj -> 01231
+ybmdxplr -> 01234567
+djl -> 012
+htlb -> 0123
+djbd -> 0120
+rgoldjhfz -> 012345678
+ybf -> 012
+nggk -> 0112
+ygomnldlne -> 0123456547
+pbftgo -> 012345
+lulf -> 0102
+djgxzj -> 012341
+fgd -> 012
+djhr -> 0123
+mgqlpwxn -> 01234567
+ygfylmd -> 0120345
+xftlpnhlr -> 012345637
+oxyj -> 0123
+ogtlpf -> 012345
+ypemdgzpb -> 012345617
+mje -> 012
+bft -> 012
+jbr -> 012
+bmmnhybdhgfr -> 011234053678
+bft -> 012
+homnhybdhgfr -> 012304560789
+vlegft -> 012345
+djl -> 012
+whlnt -> 01234
+qlnn -> 0122
+ygomxdbdhgfbn -> 0123456571869
+rlyxphde -> 01234567
+yjbmdlp -> 0123456
+hfdpgtxylt -> 0123456785
+djl -> 012
+fgdhgf -> 012310
+mlpwlyd -> 0123145
+rlyplye -> 0123124
+qjhnl -> 01234
+mlpwlyd -> 0123145
+rlyplye -> 0123124
+qgpdjqjhnl -> 0123404567
+zgbn -> 0123
+bnrg -> 0123
+xfflylrrbphne -> 0112324456789
+rdpgfz -> 012345
+mlpwlyd -> 0123145
+rlyplye -> 0123124
+plaxhplr -> 01234015
+djbd -> 0120
+bvrgnxdlne -> 0123456748
+hfwgpobdhgf -> 01234567031
+bvgxd -> 01234
+lfypemdlt -> 012345607
+olrrbzl -> 0122341
+nlbklt -> 012314
+lulf -> 0102
+lbulrtpgmmlp -> 012034567705
+qhdj -> 0123
+xfnhohdlt -> 012343567
+ygomxdbdhgfbn -> 0123456571869
+mgqlp -> 01234
+wgp -> 012
+bnn -> 011
+mpbydhybn -> 012345326
+mxpmgrlr -> 01203454
+jgqlulp -> 0123435
+lfypemdhgf -> 0123456781
+ryjlol -> 012343
+qgxnt -> 01234
+rdhnn -> 01233
+ygfrhtlplt -> 0123456765
+rlyxpl -> 012341
+nlbklt -> 012314
+gfne -> 0123
+dhfe -> 0123
+bogxfd -> 012345
+hfwgpobdhgf -> 01234567031
+lbulrtpgmmlpr -> 0120345677053
+qhdj -> 0123
+vgxftlt -> 0123454
+ygomxdbdhgfbn -> 0123456571869
+mgqlp -> 01234
+wgp -> 012
+lcbomnl -> 0123450
+ryjlol -> 012343
+djbd -> 0120
+nlbkr -> 01234
+hfwgpobdhgf -> 01234567031
+qhdj -> 0123
+mpgvbvhnhde -> 01234356578
+ogrd -> 0123
+lbulrtpgmmlpr -> 0120345677053
+hfulrdhfz -> 012345016
+elbpr -> 01234
+ygo -> 012
+mxdbdhgfbn -> 0123245637
+lwwgpd -> 011234
+djl -> 012
+wbrdlrd -> 0123423
+bubhnbvnl -> 010230435
+rxmlpygomxdlp -> 0123456721834
+btlaxbdl -> 01234052
+wgp -> 012
+bfe -> 012
+plbn -> 0123
+qgpnt -> 01234
+bmmnhybdhgf -> 01123405367
+rlyxphde -> 01234567
+tlwhfhdhgfr -> 01234353647
+djbd -> 0120
+dbkl -> 0123
+hfdg -> 0123
+byygxfd -> 0112345
+ygomxdb -> 0123456
+dhgfbn -> 012345
+nhohdr -> 012134
+djl -> 012
+bddbyklp -> 01102345
+bft -> 012
+bnngq -> 01123
+wgp -> 012
+robnn -> 01233
+mpgvbvhnhde -> 01234356578
+wbhnxpl -> 0123456
+bpl -> 012
+ybnnlt -> 012234
+ygomxdbdhgfbn -> 0123456571869
+thrdhfzxhrj -> 01231456127
+djlo -> 0123
+wpgo -> 0123
+fgdhgfr -> 0123104
+nhkl -> 0123
+mlpwlyd -> 0123145
+rlyplye -> 0123124
+djbd -> 0120
+bpl -> 012
+hfwgpobdhgf -> 01234567031
+djlgpldhy -> 012342056
+fbdxpl -> 012345
+ygomxdbdhgfbn -> 0123456571869
+rlyxphde -> 01234567
+fgq -> 012
+djl -> 012
+wbydg -> 01234
+qbe -> 012
+qjhyj -> 01231
+rlyxphde -> 01234567
+tlwhflt -> 0123410
+wgp -> 012
+bnn -> 011
+ypemdgzpbmjhy -> 0123456173890
+mxpmgrlr -> 01203454
+rdplrr -> 012300
+djbd -> 0120
+bndjgxzj -> 01234563
+zhul -> 0123
+gvdbhfhfz -> 012345456
+mlpwlyd -> 0123145
+rlyxphde -> 01234567
+djhr -> 0123
+tglr -> 0123
+fgd -> 012
+olbf -> 0123
+bqbe -> 0102
+qhdj -> 0123
+djl -> 012
+phzgpgxr -> 01230345
+obdjlobdhybn -> 012340125617
+bmmpgbyj -> 01123045
+tlwhfhdhgfr -> 01234353647
+bft -> 012
+mpggwr -> 012234
+bpl -> 012
+rdhnn -> 01233
+lrrlfdhbn -> 011023456
+bft -> 012
+djl -> 012
+gfne -> 0123
+thwwlplfyl -> 0122343563
+djbd -> 0120
+fgq -> 012
+ygfrhtlp -> 01234567
+qlbklp -> 012314
+vxd -> 012
+rdhnn -> 01233
+olbfhfzwxn -> 0123435678
+tlwhfhdhgfr -> 01234353647
+rlyxphde -> 01234567
+ygomxdbdhgfbn -> 0123456571869
+rlyxphde -> 01234567
+hfygpmgpbdlr -> 012345346789
+dqg -> 012
+plnbcbdhgfr -> 01234356789
+plnbdhul -> 01234561
+hfwgpobdhgf -> 01234567031
+hfdpgtxydhgf -> 012345672041
+ogtlpf -> 012345
+ypemdgzpbmje -> 012345617382
+djlgpldhy -> 012342056
+fgdhgfr -> 0123104
+rlyxphde -> 01234567
+djl -> 012
+ybrl -> 0123
+lfypemdhgf -> 0123456781
+vgdj -> 0123
+djlrl -> 01232
+plnbcbdhgfr -> 01234356789
+bpl -> 012
+flylrrbpe -> 012133456
+gptlp -> 01231
+vlegft -> 012345
+djl -> 012
+nhohdbdhgfr -> 01213431567
+mlpwlyd -> 0123145
+rlyplye -> 0123124
+thryxrrlt -> 012342250
+djl -> 012
+mpluhgxr -> 01234567
+yjbmdlp -> 0123456
+rlyxphde -> 01234567
+gfne -> 0123
+zxbpbfdllt -> 0123245667
+bzbhfrd -> 0102345
+lwwhyhlfd -> 011232045
+btulprbphlr -> 01234504635
+djbd -> 0120
+pxf -> 012
+wgp -> 012
+rgol -> 0123
+wlbrhvnl -> 01234561
+bogxfd -> 012345
+dhol -> 0123
+djhr -> 0123
+olbfr -> 01234
+djbd -> 0120
+zhulf -> 01234
+lfgxzj -> 012345
+dhol -> 0123
+rxwwh -> 01223
+yhlfd -> 01234
+ygomxdbdhgfbn -> 0123456571869
+plrgxpylr -> 012340512
+bddbyklp -> 01102345
+obe -> 012
+bvnl -> 0123
+uhgnbdl -> 0123456
+rlyx -> 0123
+phde -> 0123
+ybf -> 012
+obkl -> 0123
+djl -> 012
+plrgxpylr -> 012340512
+plaxhplt -> 01234015
+vplbk -> 01234
+djl -> 012
+ryjlol -> 012343
+nbpzlp -> 012342
+djbf -> 0123
+djgrl -> 01234
+bubhnbvnl -> 010230435
+bfe -> 012
+plbnhrdhy -> 012345647
+bddbyklp -> 01102345
+djlf -> 0123
+wgp -> 012
+bnn -> 011
+mpbydhybn -> 012345326
+mxp -> 012
+mgrlr -> 01232
+djl -> 012
+ryjlol -> 012343
+xfvplbkbvnl -> 01234565274
+btulprbphlr -> 01234504635
+ybf -> 012
+mgdlfdhbnne -> 01234256778
+rxyyllt -> 0122334
+rlyxphde -> 01234567
+ybf -> 012
+mgdlfdhbnne -> 01234256778
+wbhn -> 0123
+qhdj -> 0123
+rgol -> 0123
+ulpe -> 0123
+robnn -> 01233
+mpgvbvhnhde -> 01234356578
+ybf -> 012
+obkl -> 0123
+djhr -> 0123
+mpgvbvhnhde -> 01234356578
+rxwwh -> 01223
+yhlfdne -> 0123456
+robnn -> 01233
+fllt -> 0112
+fgd -> 012
+qgppe -> 01223
+bvgxd -> 01234
+gvdbhf -> 012345
+olbfhfzwxn -> 0123435678
+djlgpe -> 012345
+fllt -> 0112
+mplyhrlne -> 012345267
+tlwhfl -> 012341
+djl -> 012
+bvgul -> 01234
+plnbc -> 01234
+bdhgfr -> 012345
+djlpl -> 01232
+bpl -> 012
+dqg -> 012
+zlflpbn -> 0121345
+bmmpgbyjlr -> 0112304567
+wgp -> 012
+tghfz -> 01234
+djl -> 012
+ygfypldl -> 01203454
+bmmpgbyj -> 01123045
+bft -> 012
+djl -> 012
+breomdgdhy -> 0123456578
+bmmpgbyj -> 01123045
+djlrl -> 01232
+bpl -> 012
+tlryphvlt -> 012345610
+flcd -> 0123
 
 ============================================
         MANUAL KEY RECOVERY
@@ -686,7 +690,7 @@ Enter key again:
           RECOVERED SUBSTITUTION KEY
 ============================================
 Cipher : ABCDEFGHIJKLMNOPQRSTUVWXYZ
-Plain  : MNBVCXZASDFGHJKLPOIUYTREWQ
+Plain  : MNBVCXZLKJHGFDSAPOIUYTREWQ
 
 Mappings:
 A -> M
@@ -696,15 +700,15 @@ D -> V
 E -> C
 F -> X
 G -> Z
-H -> A
-I -> S
-J -> D
-K -> F
+H -> L
+I -> K
+J -> J
+K -> H
 L -> G
-M -> H
-N -> J
-O -> K
-P -> L
+M -> F
+N -> D
+O -> S
+P -> A
 Q -> P
 R -> O
 S -> I
@@ -719,53 +723,53 @@ Z -> Q
 ============================================
           RECOVERED PLAINTEXT
 ============================================
-x qsu afubkzeg cspaquf tu gpt gzvu wexopvuxqpi ikvkqpqkzxg zw aufwucq gu-
-cfucj. Kx qskg cspaquf tu ruykx zef gqeoj zw vzoufx cfjaqzyfpasj rj kxqfz-
-oeckxy qsu tupmuf (req gewwkckuxq) xzqkzx zw czvaeqpqkzxpi gucfucj. Tu tkii
-qsux gszt szt qskg ouwkxkqkzx cpx ru eguo qz rjapgg qsu kvazggkrkikqj fugeiqg
-gsztx afubkzegij pxo, kx apfqkceipf, szt p gszfq muj (gpj, 128 rkqg izxy) cpx
-ru eguo qz uxcfjaq vpxj izxy vuggpyug (gpj, ykyprjqug kx qzqpi).
-Pizxy qsu tpj tu tkii gqeoj qsu wexopvuxqpi xzqkzx zw agueozfpxozvxugg,
-tskcs cpaqefug qsu koup qspq gzvuqskxy cpx “izzm” czvaiuquij fpxozv ubux
-qszeys kq kg xzq. Qskg aztufwei czxcuaq exoufikug vecs zw vzoufx cfjaqzyfp-
-asj, pxo spg paaikcpqkzxg pxo kvaikcpqkzxg rujzxo qsu wkuio pg tuii.
-3.1 Czvaeqpqkzxpi Gucefkqj
-Kx Cspaquf 2 tu kxqfzoecuo qsu xzqkzx zw aufwucq gucfucj. Tskiu aufwucq
-gucfucj kg p tzfqstskiu yzpi, kq kg pigz exxucuggpfkij gqfzxy. Aufwucq gucfucj
-fudekfug qspq prgziequij xz kxwzfvpqkzx przeq px uxcfjaquo vuggpyu kg iupmuo,
-ubux qz px upbugofzaauf tkqs exikvkquo czvaeqpqkzxpi aztuf. Wzf pii afpcqkcpi
-aefazgug, sztubuf, px uxcfjaqkzx gcsuvu tzeio gqkii ru czxgkoufuo gucefu kw
-kq iupmuo zxij p qkxj pvzexq zw kxwzfvpqkzx qz upbugofzaaufg tkqs rzexouo
-czvaeqpqkzxpi aztuf. Wzf unpvaiu, p gcsuvu qspq iupmg kxwzfvpqkzx tkqs
-afzrprkikqj pq vzgq 2−60 qz upbugofzaaufg kxbugqkxy ea qz 200 jupfg zw czv-
-aeqpqkzxpi uwwzfq zx qsu wpgqugq pbpkipriu geaufczvaequf kg poudepqu wzf pxj
-fupi-tzfio paaikcpqkzx. Gucefkqj ouwkxkqkzxg qspq qpmu kxqz pcczexq czvaeqp-
-qkzxpi ikvkqg zx qsu pqqpcmuf, pxo piizt wzf p gvpii afzrprkikqj zw wpkiefu, pfu
-cpiiuo czvaeqpqkzxpi, qz okgqkxyekgs qsuv wfzv xzqkzxg (ikmu aufwucq gucfucj)
-qspq pfu kxwzfvpqkzx-qsuzfuqkc kx xpqefu. Czvaeqpqkzxpi gucefkqj kg xzt qsu
-ou wpcqz tpj kx tskcs gucefkqj kg ouwkxuo wzf pii cfjaqzyfpaskc aefazgug.
-Tu gqfugg qspq piqszeys tu ykbu ea zx zrqpkxkxy aufwucq gucefkqj, qskg ozug
-xzq vupx tu oz ptpj tkqs qsu fkyzfzeg vpqsuvpqkcpi paafzpcs. Ouwkxkqkzxg
-pxo afzzwg pfu gqkii ugguxqkpi, pxo qsu zxij okwwufuxcu kg qspq tu xzt czxgkouf
-tupmuf (req gqkii vupxkxywei) ouwkxkqkzxg zw gucefkqj.
-Czvaeqpqkzxpi gucefkqj kxczfazfpqug qtz fuipnpqkzxg fuipqkbu qz kxwzfvpqkzx-
+x vjg fagylzeo wjnfvga pg onp ozsg rexunsgxvnd dlslvnvlzxo zr fgargwv og-
+wagwc. Lx vjlo wjnfvga pg tgqlx zea oveuc zr szugax wacfvzqanfjc tc lxvaz-
+uewlxq vjg pgnhga (tev oerrlwlgxv) xzvlzx zr wzsfevnvlzxnd ogwagwc. Pg pldd
+vjgx ojzp jzp vjlo ugrlxlvlzx wnx tg eogu vz tcfnoo vjg lsfzooltldlvc agoedvo
+ojzpx fagylzeodc nxu, lx fnavlwedna, jzp n ojzav hgc (onc, 128 tlvo dzxq) wnx
+tg eogu vz gxwacfv snxc dzxq sgoonqgo (onc, qlqntcvgo lx vzvnd).
+Ndzxq vjg pnc pg pldd oveuc vjg rexunsgxvnd xzvlzx zr fogeuzanxuzsxgoo,
+pjlwj wnfveago vjg lugn vjnv ozsgvjlxq wnx “dzzh” wzsfdgvgdc anxuzs gygx
+vjzeqj lv lo xzv. Vjlo fzpgared wzxwgfv exugadlgo sewj zr szugax wacfvzqan-
+fjc, nxu jno nffdlwnvlzxo nxu lsfdlwnvlzxo tgczxu vjg rlgdu no pgdd.
+3.1 Wzsfevnvlzxnd Ogwealvc
+Lx Wjnfvga 2 pg lxvazuewgu vjg xzvlzx zr fgargwv ogwagwc. Pjldg fgargwv
+ogwagwc lo n pzavjpjldg qznd, lv lo ndoz exxgwgoonaldc ovazxq. Fgargwv ogwagwc
+agmelago vjnv ntozdevgdc xz lxrzasnvlzx ntzev nx gxwacfvgu sgoonqg lo dgnhgu,
+gygx vz nx gnygouazffga plvj exdlslvgu wzsfevnvlzxnd fzpga. Rza ndd fanwvlwnd
+feafzogo, jzpgyga, nx gxwacfvlzx owjgsg pzedu ovldd tg wzxolugagu ogweag lr
+lv dgnhgu zxdc n vlxc nszexv zr lxrzasnvlzx vz gnygouazffgao plvj tzexugu
+wzsfevnvlzxnd fzpga. Rza gbnsfdg, n owjgsg vjnv dgnho lxrzasnvlzx plvj
+faztntldlvc nv szov 2−60 vz gnygouazffgao lxygovlxq ef vz 200 cgnao zr wzs-
+fevnvlzxnd grrzav zx vjg rnovgov nynldntdg oefgawzsfevga lo nugmenvg rza nxc
+agnd-pzadu nffdlwnvlzx. Ogwealvc ugrlxlvlzxo vjnv vnhg lxvz nwwzexv wzsfevn-
+vlzxnd dlslvo zx vjg nvvnwhga, nxu nddzp rza n osndd faztntldlvc zr rnldeag, nag
+wnddgu wzsfevnvlzxnd, vz ulovlxqeloj vjgs razs xzvlzxo (dlhg fgargwv ogwagwc)
+vjnv nag lxrzasnvlzx-vjgzagvlw lx xnveag. Wzsfevnvlzxnd ogwealvc lo xzp vjg
+ug rnwvz pnc lx pjlwj ogwealvc lo ugrlxgu rza ndd wacfvzqanfjlw feafzogo.
+Pg ovagoo vjnv ndvjzeqj pg qlyg ef zx ztvnlxlxq fgargwv ogwealvc, vjlo uzgo
+xzv sgnx pg uz npnc plvj vjg alqzazeo snvjgsnvlwnd nffaznwj. Ugrlxlvlzxo
+nxu fazzro nag ovldd googxvlnd, nxu vjg zxdc ulrrgagxwg lo vjnv pg xzp wzxoluga
+pgnhga (tev ovldd sgnxlxqred) ugrlxlvlzxo zr ogwealvc.
+Wzsfevnvlzxnd ogwealvc lxwzafzanvgo vpz agdnbnvlzxo agdnvlyg vz lxrzasnvlzx-
 43
-44 Kxqfzoecqkzx qz Vzoufx Cfjaqzyfpasj
-qsuzfuqkc xzqkzxg zw gucefkqj (kx qsu cpgu zw uxcfjaqkzx, rzqs qsugu fuipnpqkzxg
-pfu xucuggpfj kx zfouf qz yz rujzxo qsu ikvkqpqkzxg zw aufwucq gucfucj okgcegguo
-kx qsu afubkzeg cspaquf):
-1. Gucefkqj kg zxij yepfpxquuo pypkxgq uwwkckuxq pobufgpfkug qspq fex wzf gzvu
-wupgkriu pvzexq zw qkvu. Qskg vupxg qspq ykbux uxzeys qkvu (zf gewwk-
-ckuxq czvaeqpqkzxpi fugzefcug) px pqqpcmuf vpj ru priu qz bkzipqu guce-
-fkqj. Kw tu cpx vpmu qsu fugzefcug fudekfuo qz rfupm qsu gcsuvu ipfyuf
-qspx qszgu pbpkipriu qz pxj fupikgqkc pqqpcmuf, qsux wzf pii afpcqkcpi aef-
-azgug qsu gcsuvu kg exrfupmpriu.
-2. Pobufgpfkug cpx azquxqkpiij geccuuo (k.u., gucefkqj cpx azquxqkpiij wpki)
-tkqs gzvu bufj gvpii afzrprkikqj. Kw tu cpx vpmu qskg afzrprkikqj gewwk-
-ckuxqij gvpii, tu xuuo xzq tzffj przeq kq.
-Qz zrqpkx p vupxkxywei qsuzfj, tu xuuo qz afuckguij ouwkxu qsu przbu fuipn-
-pqkzxg. Qsufu pfu qtz yuxufpi paafzpcsug wzf ozkxy gz: qsu czxcfuqu paafzpcs
-pxo qsu pgjvaqzqkc paafzpcs. Qsugu pfu ougcfkruo xunq.
+44 Lxvazuewvlzx vz Szugax Wacfvzqanfjc
+vjgzagvlw xzvlzxo zr ogwealvc (lx vjg wnog zr gxwacfvlzx, tzvj vjgog agdnbnvlzxo
+nag xgwgoonac lx zauga vz qz tgczxu vjg dlslvnvlzxo zr fgargwv ogwagwc uloweoogu
+lx vjg fagylzeo wjnfvga):
+1. Ogwealvc lo zxdc qenanxvggu nqnlxov grrlwlgxv nuygaonalgo vjnv aex rza ozsg
+rgnoltdg nszexv zr vlsg. Vjlo sgnxo vjnv qlygx gxzeqj vlsg (za oerrl-
+wlgxv wzsfevnvlzxnd agozeawgo) nx nvvnwhga snc tg ntdg vz ylzdnvg ogwe-
+alvc. Lr pg wnx snhg vjg agozeawgo agmelagu vz tagnh vjg owjgsg dnaqga
+vjnx vjzog nynldntdg vz nxc agndlovlw nvvnwhga, vjgx rza ndd fanwvlwnd fea-
+fzogo vjg owjgsg lo extagnhntdg.
+2. Nuygaonalgo wnx fzvgxvlnddc oewwggu (l.g., ogwealvc wnx fzvgxvlnddc rnld)
+plvj ozsg ygac osndd faztntldlvc. Lr pg wnx snhg vjlo faztntldlvc oerrl-
+wlgxvdc osndd, pg xggu xzv pzaac ntzev lv.
+Vz ztvnlx n sgnxlxqred vjgzac, pg xggu vz fagwlogdc ugrlxg vjg ntzyg agdnb-
+nvlzxo. Vjgag nag vpz qgxgand nffaznwjgo rza uzlxq oz: vjg wzxwagvg nffaznwj
+nxu vjg nocsfvzvlw nffaznwj. Vjgog nag ugowaltgu xgbv.
 
 
 ============================================
