@@ -1,0 +1,16 @@
+# Compiled executables
+/urandom
+/openssl_random
+/analysis
+/build/
+
+# Generated random data
+/data/*.bin
+
+# Temporary result files
+/results/*.csv
+/results/*.txt
+
+# Editor files
+.vscode/
+*.swp
